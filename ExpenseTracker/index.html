@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="Description"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="icon" href="img/favicon.png"/>
+  <link rel="apple-touch-icon" rel="img/apple-touch-icon.png" />
+  <link rel="mainfest" href="manifest.webmanifest" />
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="general.css" />
+
+  <!-- JS links -->
+  <script defer src="script.js"></script>
+  <title>Keep track of expenses</title>
+</head>
+
+<body>
+  <!-- Navigation Part Section -->
+  <nav>
+    <div class="nav-links">
+      <a class="nav-link" href="#"><ion-icon class="nav-icon" name="text-outline"></ion-icon><span class="nav-text">Hyphoneer</span></a>
+      <a class="nav-link" href="#"><ion-icon class="nav-icon" name="grid-outline"></ion-icon><span class="nav-text">Dashbord</span></a>
+      <a class="nav-link" href="#"><ion-icon class="nav-icon" name="analytics-outline"></ion-icon><span class="nav-text">Revenue</span></a>
+      <a class="nav-link" href="#"><ion-icon class="nav-icon" name="wallet-outline"></ion-icon><span class="nav-text">Wallet</span></a>
+      <a class="nav-link" href="#"><ion-icon class="nav-icon" name="reader-outline"></ion-icon><span class="nav-text">Report</span></a>
+      <a class="nav-link" href="#"><ion-icon class="nav-icon" name="settings-outline"></ion-icon><span class="nav-text">Settings</span></a>
+    </div>
+    <div class="update">
+      <ion-icon class="update-icon" name="code-slash-outline"></ion-icon>
+      <p class="update-text">New update available <br> click to update</p>
+      <button class="btn-update">Update</button>
+    </div>
+  </nav>
+  <!-- Main part Section -->
+  <menu>
+      <p>Overview</p>
+    <div class="search">
+      <ion-icon class="search-icon" name="search-outline"></ion-icon>
+      <input class="input" type="text" placeholder="Search something...">
+    </div>
+    <div class="btns-menu">
+      <a class="menu-icon" href="#"><ion-icon class="menu-btn-icon" name="notifications-outline"></ion-icon></a>
+      <a class="menu-icon" href="#"><ion-icon class="menu-btn-icon" name="log-in-outline"></ion-icon></a>
+      <a class="menu-link" href="#">Upgrade Plan</a>
+    </div>
+    </menu>
+  <main>
+    <!-- Grid 4 columns Section -->
+    <section class="grid-4--cols">
+      <!-- First card -->
+      <div class="card first-card">
+        <div class="first-line">
+          <ion-icon class="card-icon first-card-icon" name="basket-outline"></ion-icon>
+          <p id="first-card-p">+24%</p>
+        </div>
+        <p class="total-amount">$27,340.00</p>
+        <div class="last-line">
+          <p>Total Sales</p>
+          <div class="percentages">
+            <ion-icon class="up" name="trending-up-outline"></ion-icon>
+            <p class="up-text">30%</p>
+          </div>
+        </div>
+      </div>
+      <!-- Second card -->
+      <div class="card second-card">
+        <div class="first-line">
+          <ion-icon class="card-icon second-card-icon"  name="reader-outline"></ion-icon>
+          <p id="second-card-p">-32%</p>
+        </div>
+        <p class="total-amount">$17,650.00</p>
+        <div class="last-line">
+          <p>Total Expenses</p>
+          <div class="percentages">
+            <ion-icon class="down" name="trending-down-outline"></ion-icon>
+            <p class="down-text">20%</p>
+          </div>
+        </div>
+      </div>
+      <!-- Third card -->
+      <div class="card third-card">
+        <div class="first-line">
+          <ion-icon class="card-icon third-card-icon"  name="person-add-outline"></ion-icon>
+          <p id="third-card-p">+44%</p>
+        </div>
+        <p class="total-amount">$16,430.00</p>
+        <div class="last-line">
+          <p>Total Visitors</p>
+          <div class="percentages">
+            <ion-icon class="up" name="trending-up-outline"></ion-icon>
+            <p class="up-text">60%</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth card -->
+      <div class="card fourth-card">
+        <div class="first-line">
+          <ion-icon class="card-icon fourth-card-icon"  name="cart-outline"></ion-icon>
+          <p id="fourth-card-p">-15%</p>
+        </div>
+        <p class="total-amount">$10,430.00</p>
+        <div class="last-line">
+          <p>Total Orders</p>
+          <div class="percentages">
+            <ion-icon class="down" name="trending-down-outline"></ion-icon>
+            <p class="down-text">20%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Acitvity and Latest Spendings Section -->
+    <section class="grid-2--cols">
+      <div class="first-col">
+        <div class="activity-part">
+          <p>Activity</p>
+          <button>
+            <span>12-17 Dec</span>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </button>
+        </div>
+        <img class="activity-graph" src="img/activity.png" alt="Activity graph" />
+      </div>
+
+      <!-- Second -->
+      <div class="second-col">
+        <div class="latest-spendings">
+          <p>Latest spendings</p>
+          <a href="#">View all</a>
+        </div>
+<!-- First spending -->
+        <div class="spending-div">
+          <ion-icon name="cart-outline"></ion-icon>
+          <div>
+            <p>Online store</p>
+            <span>Dec 17, 2022 at 10:40 PM</span>
+          </div>
+          <span>-$43.08</span>
+        </div>
+        <!-- Second spending -->
+        <div class="spending-div">
+          <ion-icon name="cart-outline"></ion-icon>
+          <div>
+            <p>Housekeeping</p>
+            <span>Dec 16, 2022 at 8:30 PM</span>
+          </div>
+          <span>-$21.67</span>
+        </div>
+  <!-- Third spending -->
+        <div class="spending-div">
+          <ion-icon name="cart-outline"></ion-icon>
+          <div>
+            <p>Tickets</p>
+            <span>Dec 15, 2022 at 5:22 PM</span>
+          </div>
+          <span>-$164.89</span>
+        </div>
+        <!-- Fourth spending -->
+        <div class="spending-div">
+          <ion-icon name="cart-outline"></ion-icon>
+          <div>
+            <p>Rent</p>
+            <span>Dec 14, 2022 at 10:22 AM</span>
+          </div>
+          <span>-$2100.00</span>
+        </div>
+      </div>
+    </section>
+    <!-- Order List Section -->
+    <section>
+      <div class="order-list-div">
+        <p>Order List</p>
+        <div>
+          <button class="first-btn">Today</button>
+          <button>Weekly</button>
+          <button>Monthly</button>
+        </div>
+      </div>
+      <div class="grid-5--cols">
+        <div>
+          <span>Customer Name</span>
+          <ion-icon name="swap-vertical-outline"></ion-icon>
+        </div>
+        <span>Date</span>
+        <span>Location</span>
+        <div>
+          <span>Amount</span>
+          <ion-icon name="swap-vertical-outline"></ion-icon>
+        </div>
+        <div>
+          <span>Status Order</span>
+          <ion-icon name="swap-vertical-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="client-order">
+        <span>Roberto Carlo</span>
+        <span>Dec 20th, 2022</span>
+        <span class="location">Corner Street 5th London</span>
+        <span>$21.43</span>
+        <div>
+          <ion-icon name="radio-button-on-outline"></ion-icon>
+          <span>New Order</span>
+        </div>
+      </div>
+
+      <div class="client-order">
+        <span>Rohmad Khoir</span>
+        <span>Dec 19th, 2022</span>
+        <span class="location">Yogos Street 4th London</span>
+        <span>$86.75</span>
+        <div>
+          <ion-icon name="radio-button-on-outline"></ion-icon>
+          <span>New Order</span>
+        </div>
+      </div>
+
+      <div class="client-order">
+        <span>Jason Bateman</span>
+        <span>Dec 18th, 2022</span>
+        <span class="location">Last Street 12th London</span>
+        <span>$32.99</span>
+        <div>
+          <ion-icon name="radio-button-on-outline"></ion-icon>
+          <span>New Order</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Ion icons part -->
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</body>
+
+</html>
